@@ -1,0 +1,142 @@
+@import url("https://fonts.google.com/specimen/Libre+Franklin?contentType=jsonp");
+
+body {
+  text-align: center;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+.logo {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+.greyWeAre {
+  color: hsl(0, 0%, 59%);
+  font-weight: lighter;
+}
+
+h3 {
+  color: hsl(0, 0%, 59%);
+}
+
+.emailInput {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+#inputEmail {
+  margin-right: 10px;
+  width: 30vw;
+  height: 40px;
+  border-radius: 30px;
+  font-size: larger;
+  opacity: 0.5;
+  text-indent: 2em;
+}
+
+.buttonNotify {
+  width: 10%;
+  height: 50px;
+  border-radius: 30px;
+  border: none;
+  background-color: hsl(223, 87%, 63%);
+  color: white;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+.buttonNotify:hover {
+  cursor: pointer;
+}
+
+.buttonNotify:active {
+  transform: translate(0, 2px);
+}
+
+.dashboard {
+  width: 40vw;
+  height: auto;
+  justify-content: center;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 20%;
+  margin-left: 20%;
+  border: solid hsl(223, 87%, 63%);
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.iconsAndRight {
+  opacity: 0.5;
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  opacity: 0.5;
+}
+
+.rights {
+  position: absolute;
+  left: 43%;
+  bottom: 10px;
+}
+
+.attribution {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  margin-bottom: 0 auto;
+}
+
+.errors {
+  color: hsl(354, 100%, 66%);
+  font-style: italic;
+}
+
+@media only screen and (max-width: 1000px) {
+  .emailInput {
+    flex-direction: column;
+    margin-left: 1rem;
+  }
+  #inputEmail {
+    width: 80vw;
+    margin-left: 0.5em;
+  }
+
+  .buttonNotify {
+    width: 80vw;
+    margin-top: 20px;
+  }
+
+  .dashboard {
+    width: 90vw;
+    height: auto;
+  }
+  .icon {
+    width: 10px;
+    height: auto;
+  }
+
+  .rights {
+    font-size: smaller;
+    left: auto center;
+    transform: translate(-30%, 0);
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .attribution {
+    display: none;
+  }
+}
